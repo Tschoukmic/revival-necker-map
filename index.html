@@ -1,0 +1,2233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_068438a8d4d7332d22d2f61375a0ec97 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_068438a8d4d7332d22d2f61375a0ec97" ></div>
+        
+    
+<div style="position: fixed; bottom: 24px; left: 24px; z-index: 9999; background: rgba(255,255,255,0.95); padding: 12px 14px; border: 1px solid #cfd8dc; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4;">
+  <div style="font-weight: 700; margin-bottom: 8px;">Revival Necker Participants</div>
+  <div><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#1f77b4;margin-right:8px;"></span>France</div>
+  <div><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#d62728;margin-right:8px;"></span>Outside France</div>
+  <div style="margin-top:8px;color:#455a64;">Click a point to see the full list of people there.</div>
+</div>
+</body>
+<script>
+    
+    
+            var map_068438a8d4d7332d22d2f61375a0ec97 = L.map(
+                "map_068438a8d4d7332d22d2f61375a0ec97",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": true,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_068438a8d4d7332d22d2f61375a0ec97);
+
+            
+
+        
+    
+            var tile_layer_7195609cf039d421aea7ab61511ae686 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7195609cf039d421aea7ab61511ae686.addTo(map_068438a8d4d7332d22d2f61375a0ec97);
+        
+    
+            var feature_group_c9f3860f6e40b03158560e3c6f14a4c8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_a5508431689a5cd301adefd4b4ba9f71 = L.circleMarker(
+                [-20.6378428, 161.2117626],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_c6d063236e15784ee257721b4dab31d8 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_578709bf24de1eb4a38ed1868fe593af = $(`<div id="html_578709bf24de1eb4a38ed1868fe593af" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Nouvelle Caledonie</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Nouvelle-Calédonie (zone économique exclusive)</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Nouvelle Calédonie</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Not available</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Bertrand Billemont</li></ul>     </div>     </div>`)[0];
+                popup_c6d063236e15784ee257721b4dab31d8.setContent(html_578709bf24de1eb4a38ed1868fe593af);
+            
+        
+
+        circle_marker_a5508431689a5cd301adefd4b4ba9f71.bindPopup(popup_c6d063236e15784ee257721b4dab31d8)
+        ;
+
+        
+    
+    
+            circle_marker_a5508431689a5cd301adefd4b4ba9f71.bindTooltip(
+                `<div>
+                     Nouvelle Caledonie (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_43aa45af195b9789b71c2af6a2937502 = L.circleMarker(
+                [48.8435834, 2.4010241],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_7f9695063789e978e4302d997effece2 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_c2e6320cf3e1cf24e04737e5e8428196 = $(`<div id="html_c2e6320cf3e1cf24e04737e5e8428196" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>AP-HP / Paris</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Campus Picpus AP-HP, Boulevard de Picpus, Quartier de Picpus, Paris 12e Arrondissement, Paris, Île-de-France, France métropolitaine, 75012, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> AP-HP / Paris</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Public health</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Johann Omiya (ex Cailhol)</li></ul>     </div>     </div>`)[0];
+                popup_7f9695063789e978e4302d997effece2.setContent(html_c2e6320cf3e1cf24e04737e5e8428196);
+            
+        
+
+        circle_marker_43aa45af195b9789b71c2af6a2937502.bindPopup(popup_7f9695063789e978e4302d997effece2)
+        ;
+
+        
+    
+    
+            circle_marker_43aa45af195b9789b71c2af6a2937502.bindTooltip(
+                `<div>
+                     AP-HP / Paris (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b898aa1464239e630df68af990dcd03 = L.circleMarker(
+                [50.4912838, 3.2907097],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_261710308f1b9876ba22b13acd6e4001 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_cf7c1f7d367e59755e508c5d3b6a8c54 = $(`<div id="html_cf7c1f7d367e59755e508c5d3b6a8c54" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Aix</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Aix-en-Pévèle, Douai, Nord, Hauts-de-France, France métropolitaine, 59310, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Aix</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Cardiology</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Julie Curjol</li></ul>     </div>     </div>`)[0];
+                popup_261710308f1b9876ba22b13acd6e4001.setContent(html_cf7c1f7d367e59755e508c5d3b6a8c54);
+            
+        
+
+        circle_marker_4b898aa1464239e630df68af990dcd03.bindPopup(popup_261710308f1b9876ba22b13acd6e4001)
+        ;
+
+        
+    
+    
+            circle_marker_4b898aa1464239e630df68af990dcd03.bindTooltip(
+                `<div>
+                     Aix (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_462b099ac907abc66e5c1b13993c7ef0 = L.circleMarker(
+                [41.9263991, 8.7376029],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_595b4f06a2dbed0a712d31f327c52398 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_fb0267c390cbbcde320940ed037d9103 = $(`<div id="html_fb0267c390cbbcde320940ed037d9103" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Ajaccio</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Ajaccio, Corse-du-Sud, Corse, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Ajaccio</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Biologiste</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Ors'antone Calendini</li></ul>     </div>     </div>`)[0];
+                popup_595b4f06a2dbed0a712d31f327c52398.setContent(html_fb0267c390cbbcde320940ed037d9103);
+            
+        
+
+        circle_marker_462b099ac907abc66e5c1b13993c7ef0.bindPopup(popup_595b4f06a2dbed0a712d31f327c52398)
+        ;
+
+        
+    
+    
+            circle_marker_462b099ac907abc66e5c1b13993c7ef0.bindTooltip(
+                `<div>
+                     Ajaccio (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1313b75f62904dd6c4a7e7103e9f3e14 = L.circleMarker(
+                [48.9479069, 2.2481797],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_8c35f8c7934691f65b29f935dff149e2 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_c7a5ff8329b4eb53893bfa92e88f6691 = $(`<div id="html_c7a5ff8329b4eb53893bfa92e88f6691" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Argenteuil</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Argenteuil, Val-d'Oise, Île-de-France, France métropolitaine, 95100, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Argenteuil</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Cardiology</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Chloe Durier</li></ul>     </div>     </div>`)[0];
+                popup_8c35f8c7934691f65b29f935dff149e2.setContent(html_c7a5ff8329b4eb53893bfa92e88f6691);
+            
+        
+
+        circle_marker_1313b75f62904dd6c4a7e7103e9f3e14.bindPopup(popup_8c35f8c7934691f65b29f935dff149e2)
+        ;
+
+        
+    
+    
+            circle_marker_1313b75f62904dd6c4a7e7103e9f3e14.bindTooltip(
+                `<div>
+                     Argenteuil (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_06c548d5807afe9001bfca6c524f7da7 = L.circleMarker(
+                [48.9105948, 2.2890454],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_98f62f090ceacb93998d1aa57142c358 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_135c42a81f60ebee55bc34ea5b3a6e41 = $(`<div id="html_135c42a81f60ebee55bc34ea5b3a6e41" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Asnieres-sur-Seine (92)</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Asnières-sur-Seine, Nanterre, Hauts-de-Seine, Île-de-France, France métropolitaine, 92600, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Asnieres-sur-Seine (92)</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Child psychiatry</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Sylvie Barreteau</li></ul>     </div>     </div>`)[0];
+                popup_98f62f090ceacb93998d1aa57142c358.setContent(html_135c42a81f60ebee55bc34ea5b3a6e41);
+            
+        
+
+        circle_marker_06c548d5807afe9001bfca6c524f7da7.bindPopup(popup_98f62f090ceacb93998d1aa57142c358)
+        ;
+
+        
+    
+    
+            circle_marker_06c548d5807afe9001bfca6c524f7da7.bindTooltip(
+                `<div>
+                     Asnieres-sur-Seine (92) (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90d151569e91a2b32c4207fe0f0a36b1 = L.circleMarker(
+                [44.841225, -0.5800364],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_dff8addc00b678962e7ad75b467a3ae4 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_49816311d463327eecdb21acc8743567 = $(`<div id="html_49816311d463327eecdb21acc8743567" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Bordeaux</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 4</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Bordeaux, Gironde, Nouvelle-Aquitaine, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Bordeaux</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Hématologue, Orthopédie, Plastic surgery</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Chloé James</li><li>Guillaume Lemierre</li><li>Isabelle Meresse</li><li>Yan Lefèvre</li></ul>     </div>     </div>`)[0];
+                popup_dff8addc00b678962e7ad75b467a3ae4.setContent(html_49816311d463327eecdb21acc8743567);
+            
+        
+
+        circle_marker_90d151569e91a2b32c4207fe0f0a36b1.bindPopup(popup_dff8addc00b678962e7ad75b467a3ae4)
+        ;
+
+        
+    
+    
+            circle_marker_90d151569e91a2b32c4207fe0f0a36b1.bindTooltip(
+                `<div>
+                     Bordeaux (4)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35be5f61b6f3b6b289f61f87b2ef64e0 = L.circleMarker(
+                [48.8356649, 2.240206],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_ce7998cb54aa62ecbe7ce5359e3856b9 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_c33b329f788793e9711a693bdf6c68ff = $(`<div id="html_c33b329f788793e9711a693bdf6c68ff" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Boulogne-Billancourt</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Boulogne-Billancourt, Hauts-de-Seine, Île-de-France, France métropolitaine, 92100, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Boulogne-Billancourt</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Ophtalmo</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Olivier Robine</li></ul>     </div>     </div>`)[0];
+                popup_ce7998cb54aa62ecbe7ce5359e3856b9.setContent(html_c33b329f788793e9711a693bdf6c68ff);
+            
+        
+
+        circle_marker_35be5f61b6f3b6b289f61f87b2ef64e0.bindPopup(popup_ce7998cb54aa62ecbe7ce5359e3856b9)
+        ;
+
+        
+    
+    
+            circle_marker_35be5f61b6f3b6b289f61f87b2ef64e0.bindTooltip(
+                `<div>
+                     Boulogne-Billancourt (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4762e8e5370632d972edf8b3e5af36d = L.circleMarker(
+                [50.7259985, 1.6118771],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_22aef7b731df141e48b994fe416b9cb3 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_cd07940d457c2eaea87fb146ba517fd6 = $(`<div id="html_cd07940d457c2eaea87fb146ba517fd6" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Boulogne-sur-Mer</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Boulogne-sur-Mer, Pas-de-Calais, Hauts-de-France, France métropolitaine, 62200, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Boulogne-sur-Mer</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Ophthalmology</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Dominique Pawlak</li></ul>     </div>     </div>`)[0];
+                popup_22aef7b731df141e48b994fe416b9cb3.setContent(html_cd07940d457c2eaea87fb146ba517fd6);
+            
+        
+
+        circle_marker_f4762e8e5370632d972edf8b3e5af36d.bindPopup(popup_22aef7b731df141e48b994fe416b9cb3)
+        ;
+
+        
+    
+    
+            circle_marker_f4762e8e5370632d972edf8b3e5af36d.bindTooltip(
+                `<div>
+                     Boulogne-sur-Mer (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_680664c2965022687c09068021366aa8 = L.circleMarker(
+                [45.5662672, 5.9203636],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_10aa11f64f9ebbb56e6f568b7600a163 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_a4813b5ec155b940346df4d5f3caa82d = $(`<div id="html_a4813b5ec155b940346df4d5f3caa82d" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Chambery</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Chambéry, Savoie, Auvergne-Rhône-Alpes, France métropolitaine, 73000, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Chambéry</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Urologue</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Jean-Francois Poisson</li></ul>     </div>     </div>`)[0];
+                popup_10aa11f64f9ebbb56e6f568b7600a163.setContent(html_a4813b5ec155b940346df4d5f3caa82d);
+            
+        
+
+        circle_marker_680664c2965022687c09068021366aa8.bindPopup(popup_10aa11f64f9ebbb56e6f568b7600a163)
+        ;
+
+        
+    
+    
+            circle_marker_680664c2965022687c09068021366aa8.bindTooltip(
+                `<div>
+                     Chambery (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c82048e0249a871dd9b3dc1e9b72285 = L.circleMarker(
+                [45.7774551, 3.0819427],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_cf6de72fa674cbadbbb154079ab8016c = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_f68f6e61565a89634476f4044542cd43 = $(`<div id="html_f68f6e61565a89634476f4044542cd43" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Clermont-Ferrand</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Clermont-Ferrand, Puy-de-Dôme, Auvergne-Rhône-Alpes, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Clermont-Ferrand</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Ophtalmo</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Jean-Baptiste DÉRIOT</li></ul>     </div>     </div>`)[0];
+                popup_cf6de72fa674cbadbbb154079ab8016c.setContent(html_f68f6e61565a89634476f4044542cd43);
+            
+        
+
+        circle_marker_9c82048e0249a871dd9b3dc1e9b72285.bindPopup(popup_cf6de72fa674cbadbbb154079ab8016c)
+        ;
+
+        
+    
+    
+            circle_marker_9c82048e0249a871dd9b3dc1e9b72285.bindTooltip(
+                `<div>
+                     Clermont-Ferrand (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c26ed13e966947d5404ad2557e5ed9e = L.circleMarker(
+                [43.7084065, -1.0518771],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_155e973c0f4a833d08228791217d8cdf = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_63b134eee87b453f841327e43521c358 = $(`<div id="html_63b134eee87b453f841327e43521c358" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Dax</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Dax, Landes, Nouvelle-Aquitaine, France métropolitaine, 40100, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Dax</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> ORL</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Virginie Turco</li></ul>     </div>     </div>`)[0];
+                popup_155e973c0f4a833d08228791217d8cdf.setContent(html_63b134eee87b453f841327e43521c358);
+            
+        
+
+        circle_marker_7c26ed13e966947d5404ad2557e5ed9e.bindPopup(popup_155e973c0f4a833d08228791217d8cdf)
+        ;
+
+        
+    
+    
+            circle_marker_7c26ed13e966947d5404ad2557e5ed9e.bindTooltip(
+                `<div>
+                     Dax (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b54c13cd044433626e7c72a20d1015d = L.circleMarker(
+                [48.9756423, 2.3275141],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_b2956ca7370bc1067c3f163897a30633 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_2b99f7021277718dcd0d3f5228c2e03a = $(`<div id="html_2b99f7021277718dcd0d3f5228c2e03a" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Deuil-la-Barre</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Deuil-la-Barre, Sarcelles, Val-d'Oise, Île-de-France, France métropolitaine, 95170, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Deuil-la-Barre</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Généraliste</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Stephanie Petit</li></ul>     </div>     </div>`)[0];
+                popup_b2956ca7370bc1067c3f163897a30633.setContent(html_2b99f7021277718dcd0d3f5228c2e03a);
+            
+        
+
+        circle_marker_2b54c13cd044433626e7c72a20d1015d.bindPopup(popup_b2956ca7370bc1067c3f163897a30633)
+        ;
+
+        
+    
+    
+            circle_marker_2b54c13cd044433626e7c72a20d1015d.bindTooltip(
+                `<div>
+                     Deuil-la-Barre (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61c5f3a5f615006bc781c0f21af8360b = L.circleMarker(
+                [46.603354, 1.8883335],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_0f6f7324c612a4ee49d815b517f30ad6 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_837f1e0c61ff9a57b70f8f98f1ad79f0 = $(`<div id="html_837f1e0c61ff9a57b70f8f98f1ad79f0" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>France</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> France (ex-SF)</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Not available</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Alexandra Frolich</li></ul>     </div>     </div>`)[0];
+                popup_0f6f7324c612a4ee49d815b517f30ad6.setContent(html_837f1e0c61ff9a57b70f8f98f1ad79f0);
+            
+        
+
+        circle_marker_61c5f3a5f615006bc781c0f21af8360b.bindPopup(popup_0f6f7324c612a4ee49d815b517f30ad6)
+        ;
+
+        
+    
+    
+            circle_marker_61c5f3a5f615006bc781c0f21af8360b.bindTooltip(
+                `<div>
+                     France (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9e75ed7fe545df4680ea0cc30789d54 = L.circleMarker(
+                [43.455613, 5.4710661],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_31976d369189e06f207040752b65d30b = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_6f1b2192f08429ab01f85d4de2273da2 = $(`<div id="html_6f1b2192f08429ab01f85d4de2273da2" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Gardanne</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Gardanne, Aix-en-Provence, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13120, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Gardanne (near Aix-en-Provence)</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> ENT / otolaryngology</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Jerome Forcioli</li></ul>     </div>     </div>`)[0];
+                popup_31976d369189e06f207040752b65d30b.setContent(html_6f1b2192f08429ab01f85d4de2273da2);
+            
+        
+
+        circle_marker_c9e75ed7fe545df4680ea0cc30789d54.bindPopup(popup_31976d369189e06f207040752b65d30b)
+        ;
+
+        
+    
+    
+            circle_marker_c9e75ed7fe545df4680ea0cc30789d54.bindTooltip(
+                `<div>
+                     Gardanne (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b80092798e4e0514bb1439c091316146 = L.circleMarker(
+                [47.2843726, -2.3951595],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_aeefd0887d3f3b7b276e2cc19043481c = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_b198a9e49a68dfbabe920986c6676254 = $(`<div id="html_b198a9e49a68dfbabe920986c6676254" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>La Baule</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> La Baule-Escoublac, Saint-Nazaire, Loire-Atlantique, Pays de la Loire, France métropolitaine, 44500, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> La Baule</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Vascular medicine</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Benoit MESLIN</li></ul>     </div>     </div>`)[0];
+                popup_aeefd0887d3f3b7b276e2cc19043481c.setContent(html_b198a9e49a68dfbabe920986c6676254);
+            
+        
+
+        circle_marker_b80092798e4e0514bb1439c091316146.bindPopup(popup_aeefd0887d3f3b7b276e2cc19043481c)
+        ;
+
+        
+    
+    
+            circle_marker_b80092798e4e0514bb1439c091316146.bindTooltip(
+                `<div>
+                     La Baule (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c0a3180d9e1d5156877d15ad18fae9b = L.circleMarker(
+                [49.4938975, 0.1079732],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_9d8674fb066b8cfc3de24fbd2f12c033 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_3e074aa590200643803b7524a105bfec = $(`<div id="html_3e074aa590200643803b7524a105bfec" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Le Havre</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Le Havre, Seine-Maritime, Normandie, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Le Havre</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Réanimateur</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Eric Frénoy</li></ul>     </div>     </div>`)[0];
+                popup_9d8674fb066b8cfc3de24fbd2f12c033.setContent(html_3e074aa590200643803b7524a105bfec);
+            
+        
+
+        circle_marker_2c0a3180d9e1d5156877d15ad18fae9b.bindPopup(popup_9d8674fb066b8cfc3de24fbd2f12c033)
+        ;
+
+        
+    
+    
+            circle_marker_2c0a3180d9e1d5156877d15ad18fae9b.bindTooltip(
+                `<div>
+                     Le Havre (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1d14e7f81b9c5683f081a3d3a1a0efa = L.circleMarker(
+                [47.041306, 0.8162905],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_6e971d6a3a813fa00885076fca9b6e2b = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_3637477031925e5977deb041e3d9642d = $(`<div id="html_3637477031925e5977deb041e3d9642d" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Ligueil (Indre-et-Loire, 37)</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Ligueil, Loches, Indre-et-Loire, Centre-Val de Loire, France métropolitaine, 37240, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Ligueil (Indre-et-Loire, 37)</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> General practice</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Cedric de la Porte des Vaux</li></ul>     </div>     </div>`)[0];
+                popup_6e971d6a3a813fa00885076fca9b6e2b.setContent(html_3637477031925e5977deb041e3d9642d);
+            
+        
+
+        circle_marker_b1d14e7f81b9c5683f081a3d3a1a0efa.bindPopup(popup_6e971d6a3a813fa00885076fca9b6e2b)
+        ;
+
+        
+    
+    
+            circle_marker_b1d14e7f81b9c5683f081a3d3a1a0efa.bindTooltip(
+                `<div>
+                     Ligueil (Indre-et-Loire, 37) (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c156a49a428341dfbf77cbb5d78cc31 = L.circleMarker(
+                [44.0322982, -1.256821],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_039be16fa76e0c8d36d72eb01fb52e35 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_906e14db02784914cca137959661b77e = $(`<div id="html_906e14db02784914cca137959661b77e" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Lit-et-Mixe</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Lit-et-Mixe, Dax, Landes, Nouvelle-Aquitaine, France métropolitaine, 40170, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Lit-et-Mixe</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> General practice (locum)</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Laurent Cardonnet</li></ul>     </div>     </div>`)[0];
+                popup_039be16fa76e0c8d36d72eb01fb52e35.setContent(html_906e14db02784914cca137959661b77e);
+            
+        
+
+        circle_marker_1c156a49a428341dfbf77cbb5d78cc31.bindPopup(popup_039be16fa76e0c8d36d72eb01fb52e35)
+        ;
+
+        
+    
+    
+            circle_marker_1c156a49a428341dfbf77cbb5d78cc31.bindTooltip(
+                `<div>
+                     Lit-et-Mixe (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a19dd66ef83086358fae8c185beec64 = L.circleMarker(
+                [47.7477336, -3.3660907],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_3c7e7b275bed391e88817157c9c454b3 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_56268a45070419e21cee0e196bd64802 = $(`<div id="html_56268a45070419e21cee0e196bd64802" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Lorient</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Lorient, Morbihan, Bretagne, France métropolitaine, 56100, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Lorient</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Radiology</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Olivier de Verdelhan</li></ul>     </div>     </div>`)[0];
+                popup_3c7e7b275bed391e88817157c9c454b3.setContent(html_56268a45070419e21cee0e196bd64802);
+            
+        
+
+        circle_marker_0a19dd66ef83086358fae8c185beec64.bindPopup(popup_3c7e7b275bed391e88817157c9c454b3)
+        ;
+
+        
+    
+    
+            circle_marker_0a19dd66ef83086358fae8c185beec64.bindTooltip(
+                `<div>
+                     Lorient (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d96e4bc0dc67819e203fcc9021edd8d = L.circleMarker(
+                [45.7578137, 4.8320114],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_795863e5d6bd98601995660a5f6f9ed7 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_2ccc364249c1f635f80c58baa0a26f47 = $(`<div id="html_2ccc364249c1f635f80c58baa0a26f47" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Lyon</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 5</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Lyon, Métropole de Lyon, Rhône, Auvergne-Rhône-Alpes, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Lyon</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Anesthésiste Pédiatrique, Généraliste (Sommeil), Internal medicine, Neonatology, Ophtalmo</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Alexandre Dénoyer</li><li>Aurelie Eckert Esparcieux</li><li>Claire Colas des Francs</li><li>Marie-Sophie Manel</li><li>Nathalie Bourdaud</li></ul>     </div>     </div>`)[0];
+                popup_795863e5d6bd98601995660a5f6f9ed7.setContent(html_2ccc364249c1f635f80c58baa0a26f47);
+            
+        
+
+        circle_marker_3d96e4bc0dc67819e203fcc9021edd8d.bindPopup(popup_795863e5d6bd98601995660a5f6f9ed7)
+        ;
+
+        
+    
+    
+            circle_marker_3d96e4bc0dc67819e203fcc9021edd8d.bindTooltip(
+                `<div>
+                     Lyon (5)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dee2328ebf57cc06059ecf7811aedcb2 = L.circleMarker(
+                [43.8338026, 5.7826657],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_84def6bfb3f3dcdc320033e0a7a358b6 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_72c07205781a79c23b5fd966858ac2a1 = $(`<div id="html_72c07205781a79c23b5fd966858ac2a1" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Manosque</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Manosque, Forcalquier, Alpes-de-Haute-Provence, Provence-Alpes-Côte d'Azur, France métropolitaine, 04100, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Manosque</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Médecin esthétique</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Julie Borovi</li></ul>     </div>     </div>`)[0];
+                popup_84def6bfb3f3dcdc320033e0a7a358b6.setContent(html_72c07205781a79c23b5fd966858ac2a1);
+            
+        
+
+        circle_marker_dee2328ebf57cc06059ecf7811aedcb2.bindPopup(popup_84def6bfb3f3dcdc320033e0a7a358b6)
+        ;
+
+        
+    
+    
+            circle_marker_dee2328ebf57cc06059ecf7811aedcb2.bindTooltip(
+                `<div>
+                     Manosque (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9ea34d7fba03eeac84b6db865f00519 = L.circleMarker(
+                [48.8681762, 2.0965935],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_ccd26a756c574c900374471aea98ba5c = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_7d2e11629daaaef32f7bc1ad8fb87f1d = $(`<div id="html_7d2e11629daaaef32f7bc1ad8fb87f1d" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Marly-le-Roi</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Marly-le-Roi, Saint-Germain-en-Laye, Yvelines, Île-de-France, France métropolitaine, 78160, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Marly-le-Roi</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Pédiatre</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Agathe Labit (Josselin)</li></ul>     </div>     </div>`)[0];
+                popup_ccd26a756c574c900374471aea98ba5c.setContent(html_7d2e11629daaaef32f7bc1ad8fb87f1d);
+            
+        
+
+        circle_marker_d9ea34d7fba03eeac84b6db865f00519.bindPopup(popup_ccd26a756c574c900374471aea98ba5c)
+        ;
+
+        
+    
+    
+            circle_marker_d9ea34d7fba03eeac84b6db865f00519.bindTooltip(
+                `<div>
+                     Marly-le-Roi (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_79e115507cf36bdf0b2be7929a50f742 = L.circleMarker(
+                [43.2961743, 5.3699525],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_66254b16c48853184c6f220df7e85e1a = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_1ae19998998d6962538a3351401fcaf1 = $(`<div id="html_1ae19998998d6962538a3351401fcaf1" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Marseille</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 4</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Marseille</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Endocrinologue, Endocrinology, Gastro, Gastroenterology</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Audrey Bégu</li><li>Laëtitia Dahan</li><li>Patrick Borentain</li><li>Virginie Castera (likely)</li></ul>     </div>     </div>`)[0];
+                popup_66254b16c48853184c6f220df7e85e1a.setContent(html_1ae19998998d6962538a3351401fcaf1);
+            
+        
+
+        circle_marker_79e115507cf36bdf0b2be7929a50f742.bindPopup(popup_66254b16c48853184c6f220df7e85e1a)
+        ;
+
+        
+    
+    
+            circle_marker_79e115507cf36bdf0b2be7929a50f742.bindTooltip(
+                `<div>
+                     Marseille (4)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0584ccede3bf81988a0af9c510043034 = L.circleMarker(
+                [50.4638918, 1.7631125],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_adf3837975459cf1304cc0defc6de591 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_1a71a6382305a1d1ffa8926beda4052b = $(`<div id="html_1a71a6382305a1d1ffa8926beda4052b" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Montreuil</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Montreuil-sur-Mer, Pas-de-Calais, Hauts-de-France, France métropolitaine, 62170, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Montreuil</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Généraliste</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Odile Brutus</li></ul>     </div>     </div>`)[0];
+                popup_adf3837975459cf1304cc0defc6de591.setContent(html_1a71a6382305a1d1ffa8926beda4052b);
+            
+        
+
+        circle_marker_0584ccede3bf81988a0af9c510043034.bindPopup(popup_adf3837975459cf1304cc0defc6de591)
+        ;
+
+        
+    
+    
+            circle_marker_0584ccede3bf81988a0af9c510043034.bindTooltip(
+                `<div>
+                     Montreuil (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_55bbb8e10242b7297ab093abfcd98b2e = L.circleMarker(
+                [47.2186371, -1.5541362],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_cd9205a45afb8b19cff5140955387770 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_ec9269f511cd2db5638ebbd10ad410b5 = $(`<div id="html_ec9269f511cd2db5638ebbd10ad410b5" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Nantes</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 4</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Nantes, Loire-Atlantique, Pays de la Loire, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Nantes</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Dermato, Dermatology, Internal medicine, Pediatric cardiology</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Celine Grunenwald</li><li>Gwen Dumont</li><li>Jerome Connault</li><li>Vero Gagey</li></ul>     </div>     </div>`)[0];
+                popup_cd9205a45afb8b19cff5140955387770.setContent(html_ec9269f511cd2db5638ebbd10ad410b5);
+            
+        
+
+        circle_marker_55bbb8e10242b7297ab093abfcd98b2e.bindPopup(popup_cd9205a45afb8b19cff5140955387770)
+        ;
+
+        
+    
+    
+            circle_marker_55bbb8e10242b7297ab093abfcd98b2e.bindTooltip(
+                `<div>
+                     Nantes (4)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f7b340820e9608d4e427f93f04c006c = L.circleMarker(
+                [48.8419763, 2.3129147],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_6f3fcb7a5f932d4740bb6071138e6934 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_eda441b5b43652254e44283b3ba48692 = $(`<div id="html_eda441b5b43652254e44283b3ba48692" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Necker / Paris</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Quartier Necker, Paris 15e Arrondissement, Paris, Île-de-France, France métropolitaine, 75015, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Necker / Paris</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Child psychiatry</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Pauline Chaste</li></ul>     </div>     </div>`)[0];
+                popup_6f3fcb7a5f932d4740bb6071138e6934.setContent(html_eda441b5b43652254e44283b3ba48692);
+            
+        
+
+        circle_marker_7f7b340820e9608d4e427f93f04c006c.bindPopup(popup_6f3fcb7a5f932d4740bb6071138e6934)
+        ;
+
+        
+    
+    
+            circle_marker_7f7b340820e9608d4e427f93f04c006c.bindTooltip(
+                `<div>
+                     Necker / Paris (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03ae71b597655ea5adebb27b87b08b62 = L.circleMarker(
+                [48.884683, 2.2695658],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_57b9eae48f2a0c88e8fc0579954a6ee6 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_5e4c0abd4c7b95367c17014c4f1940d4 = $(`<div id="html_5e4c0abd4c7b95367c17014c4f1940d4" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Neuilly-sur-Seine</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Neuilly-sur-Seine, Nanterre, Hauts-de-Seine, Île-de-France, France métropolitaine, 92200, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Neuilly-sur-Seine</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Cardio</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>David Pesenti Rossi</li></ul>     </div>     </div>`)[0];
+                popup_57b9eae48f2a0c88e8fc0579954a6ee6.setContent(html_5e4c0abd4c7b95367c17014c4f1940d4);
+            
+        
+
+        circle_marker_03ae71b597655ea5adebb27b87b08b62.bindPopup(popup_57b9eae48f2a0c88e8fc0579954a6ee6)
+        ;
+
+        
+    
+    
+            circle_marker_03ae71b597655ea5adebb27b87b08b62.bindTooltip(
+                `<div>
+                     Neuilly-sur-Seine (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f160292fbcae25c22bd4e728390dd006 = L.circleMarker(
+                [43.7009358, 7.2683912],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_53c99b0eff31eed643c90d1cde5689c7 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_f7a8bb660189fd7819a2ca792606962a = $(`<div id="html_f7a8bb660189fd7819a2ca792606962a" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Nice</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 2</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Nice, Alpes-Maritimes, Provence-Alpes-Côte d'Azur, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Nice</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Gyn-obst, Ophtalmo</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Igor Popovic</li><li>Stephanie Baillif</li></ul>     </div>     </div>`)[0];
+                popup_53c99b0eff31eed643c90d1cde5689c7.setContent(html_f7a8bb660189fd7819a2ca792606962a);
+            
+        
+
+        circle_marker_f160292fbcae25c22bd4e728390dd006.bindPopup(popup_53c99b0eff31eed643c90d1cde5689c7)
+        ;
+
+        
+    
+    
+            circle_marker_f160292fbcae25c22bd4e728390dd006.bindTooltip(
+                `<div>
+                     Nice (2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2227ae04f361edc5b27262d4cce8ad6b = L.circleMarker(
+                [48.8387639, 2.4916592],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_e6b752a132e0ed80ddea6e7c7572efd1 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_9dad21c8d32c1763a0a0bb8bfa6f24de = $(`<div id="html_9dad21c8d32c1763a0a0bb8bfa6f24de" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Nogent-sur-Marne</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Nogent-sur-Marne, Val-de-Marne, Île-de-France, France métropolitaine, 94130, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Nogent-sur-Marne</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Gastro-entérologue</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Séverine Poupeney Bouchoucha</li></ul>     </div>     </div>`)[0];
+                popup_e6b752a132e0ed80ddea6e7c7572efd1.setContent(html_9dad21c8d32c1763a0a0bb8bfa6f24de);
+            
+        
+
+        circle_marker_2227ae04f361edc5b27262d4cce8ad6b.bindPopup(popup_e6b752a132e0ed80ddea6e7c7572efd1)
+        ;
+
+        
+    
+    
+            circle_marker_2227ae04f361edc5b27262d4cce8ad6b.bindTooltip(
+                `<div>
+                     Nogent-sur-Marne (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2be0f181af3bdb318e078a3d8c0422a = L.circleMarker(
+                [43.6487851, 2.3435684],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_b68fac63bacd35c0e0fdaf34b2b6fd14 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_6b8dbb1ea89719edb22a1e4227fab1fa = $(`<div id="html_6b8dbb1ea89719edb22a1e4227fab1fa" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Occitanie</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Occitanie, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Occitanie</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Not available</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Piotr</li></ul>     </div>     </div>`)[0];
+                popup_b68fac63bacd35c0e0fdaf34b2b6fd14.setContent(html_6b8dbb1ea89719edb22a1e4227fab1fa);
+            
+        
+
+        circle_marker_d2be0f181af3bdb318e078a3d8c0422a.bindPopup(popup_b68fac63bacd35c0e0fdaf34b2b6fd14)
+        ;
+
+        
+    
+    
+            circle_marker_d2be0f181af3bdb318e078a3d8c0422a.bindTooltip(
+                `<div>
+                     Occitanie (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_41a8b30fae01698fccd54da62d9103e6 = L.circleMarker(
+                [43.6487851, 2.3435684],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_0609be8d9bc53d531378193e649205dd = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_9d06ccda8230d08d5d9d5448c68dff16 = $(`<div id="html_9d06ccda8230d08d5d9d5448c68dff16" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Occitanie, France</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Occitanie, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Occitanie (rural)</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Pediatrics / child psychiatry</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Emmanuelle Abecassis</li></ul>     </div>     </div>`)[0];
+                popup_0609be8d9bc53d531378193e649205dd.setContent(html_9d06ccda8230d08d5d9d5448c68dff16);
+            
+        
+
+        circle_marker_41a8b30fae01698fccd54da62d9103e6.bindPopup(popup_0609be8d9bc53d531378193e649205dd)
+        ;
+
+        
+    
+    
+            circle_marker_41a8b30fae01698fccd54da62d9103e6.bindTooltip(
+                `<div>
+                     Occitanie, France (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cbec9741a15b767f5d796a04b007da66 = L.circleMarker(
+                [48.8534951, 2.3483915],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_294ee59f8a5729055bade54d64a0cdc8 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_70cb15af4c00aeeb030afa162d2a08cd = $(`<div id="html_70cb15af4c00aeeb030afa162d2a08cd" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Paris</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 28</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Paris, Île-de-France, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Paris</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Aesthetic surgery, Anapath, Cardiology, Chir. Plastique, Chirurgie Plastique, Dermato, GO (likely gynecology-obstetrics), Gastro-entérologue, Gynecology-obstetrics, Hématologue, Infectiologue, Infectious diseases, Nephrology, Néphrologue, Obstetrics, Ophthalmology, Orthopedics, Pediatrics, Plastic surgery, Psy, Psychiatre, Psychiatry, Radiologue, Radiology, Urology</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Adel Louafi</li><li>Antoine Langlois</li><li>Antoine Zuber</li><li>Aude Servais</li><li>Aurore Debet</li><li>Aurélie Hummel</li><li>Benedicte Deau Fischer</li><li>Blandine (Bonvarlet) Denis</li><li>Catherine BUHL (likely)</li><li>Cyrille Huchon</li><li>Estelle Palangie</li><li>Georgia Malamut</li><li>Jean Sebastien Hulot</li><li>Julie (Duchamp) Salomon</li><li>Julien Bufnoir</li><li>Julien Saada</li><li>Juliette Duclos (Winkler)</li><li>Karine Marrou</li><li>Laurence Benouaiche</li><li>Laurent Dumas</li><li>Laurent Salomon</li><li>Marc-Antoine Rousseau</li><li>Marie Junger</li><li>Nathalie Pierre-Kahn</li><li>Nathalie de Castro</li><li>Nicolas Zwillinger</li><li>Sebastien Beley</li><li>Vincent Pierre-Kahn</li></ul>     </div>     </div>`)[0];
+                popup_294ee59f8a5729055bade54d64a0cdc8.setContent(html_70cb15af4c00aeeb030afa162d2a08cd);
+            
+        
+
+        circle_marker_cbec9741a15b767f5d796a04b007da66.bindPopup(popup_294ee59f8a5729055bade54d64a0cdc8)
+        ;
+
+        
+    
+    
+            circle_marker_cbec9741a15b767f5d796a04b007da66.bindTooltip(
+                `<div>
+                     Paris (28)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f51b9ca13f5ad91ba1f9e05b91f0a07 = L.circleMarker(
+                [48.8588897, 2.320041],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_a31e3dce9ed29ffe7e158911f5d0c155 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_ed92d44a22f0c0191018745462cbdab9 = $(`<div id="html_ed92d44a22f0c0191018745462cbdab9" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Paris, France</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 9</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Paris, Île-de-France, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> AP-HP; Paris (Cochin); Paris (HEGP); Paris (Necker); Paris (PSL); Paris (Rothschild); Paris (St Jo)</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Anesthésiste, Chirurgie pédiatrique, Dermato, Gyn-obst, Immunologie, Infectiologue, Pédiatre, Réanimation, Urologue</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Amelie Francois-Dainville-Benbara</li><li>Amélie Guihot</li><li>Aurore Marcou (Pham)</li><li>Carmen Capito</li><li>Cédric Bruel</li><li>Fanny Dessap</li><li>Géraldine Patteau</li><li>Marc Olivier Timsit</li><li>Sarah GUEGAN-BART</li></ul>     </div>     </div>`)[0];
+                popup_a31e3dce9ed29ffe7e158911f5d0c155.setContent(html_ed92d44a22f0c0191018745462cbdab9);
+            
+        
+
+        circle_marker_9f51b9ca13f5ad91ba1f9e05b91f0a07.bindPopup(popup_a31e3dce9ed29ffe7e158911f5d0c155)
+        ;
+
+        
+    
+    
+            circle_marker_9f51b9ca13f5ad91ba1f9e05b91f0a07.bindTooltip(
+                `<div>
+                     Paris, France (9)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf61b2fea54f512631e82cad5f0ec0ba = L.circleMarker(
+                [42.6985304, 2.8953121],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_3c687817dd3e63c0527827ee8e21c092 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_97fed80f971e600590936ae5e12e279c = $(`<div id="html_97fed80f971e600590936ae5e12e279c" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Perpignan</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Perpignan, Pyrénées-Orientales, Occitanie, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Perpignan</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Sports medicine</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Cedric Bellard</li></ul>     </div>     </div>`)[0];
+                popup_3c687817dd3e63c0527827ee8e21c092.setContent(html_97fed80f971e600590936ae5e12e279c);
+            
+        
+
+        circle_marker_cf61b2fea54f512631e82cad5f0ec0ba.bindPopup(popup_3c687817dd3e63c0527827ee8e21c092)
+        ;
+
+        
+    
+    
+            circle_marker_cf61b2fea54f512631e82cad5f0ec0ba.bindTooltip(
+                `<div>
+                     Perpignan (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb25eb99b06e0082c1614d31876f176f = L.circleMarker(
+                [49.0232238, 2.1557343],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_3a4b8d3b0bbaacc2830e327689020330 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_c0bb64f8dce6545bcbcc337c33e9d99a = $(`<div id="html_c0bb64f8dce6545bcbcc337c33e9d99a" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Pierrelaye</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Pierrelaye, Argenteuil, Val-d'Oise, Île-de-France, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Pierrelaye</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Médecin généraliste</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Amina Rakho Kemiche</li></ul>     </div>     </div>`)[0];
+                popup_3a4b8d3b0bbaacc2830e327689020330.setContent(html_c0bb64f8dce6545bcbcc337c33e9d99a);
+            
+        
+
+        circle_marker_bb25eb99b06e0082c1614d31876f176f.bindPopup(popup_3a4b8d3b0bbaacc2830e327689020330)
+        ;
+
+        
+    
+    
+            circle_marker_bb25eb99b06e0082c1614d31876f176f.bindTooltip(
+                `<div>
+                     Pierrelaye (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33fef75d97c4efb558164a0583967402 = L.circleMarker(
+                [49.0508845, 2.1008067],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_44fc4a7b286204f06933805318ca1bfa = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_af5dc18b815bf81d9382141df6407d15 = $(`<div id="html_af5dc18b815bf81d9382141df6407d15" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Pontoise</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Pontoise, Val-d'Oise, Île-de-France, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Pontoise</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Psychiatre</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Béatrice Chabert</li></ul>     </div>     </div>`)[0];
+                popup_44fc4a7b286204f06933805318ca1bfa.setContent(html_af5dc18b815bf81d9382141df6407d15);
+            
+        
+
+        circle_marker_33fef75d97c4efb558164a0583967402.bindPopup(popup_44fc4a7b286204f06933805318ca1bfa)
+        ;
+
+        
+    
+    
+            circle_marker_33fef75d97c4efb558164a0583967402.bindTooltip(
+                `<div>
+                     Pontoise (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aefa0ea19d6a0514e7938d74c2f164b2 = L.circleMarker(
+                [49.2195271, 3.9864282],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_258596674835ff3056d5f811a42c6e78 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_9a84af3a9ca87d1c90ab194d4d109c2c = $(`<div id="html_9a84af3a9ca87d1c90ab194d4d109c2c" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Reims Bezannes</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Bezannes, Reims, Marne, Grand Est, France métropolitaine, 51430, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Reims Bezannes</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Anesthesiology / ICU</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Fabienne Bourgeade</li></ul>     </div>     </div>`)[0];
+                popup_258596674835ff3056d5f811a42c6e78.setContent(html_9a84af3a9ca87d1c90ab194d4d109c2c);
+            
+        
+
+        circle_marker_aefa0ea19d6a0514e7938d74c2f164b2.bindPopup(popup_258596674835ff3056d5f811a42c6e78)
+        ;
+
+        
+    
+    
+            circle_marker_aefa0ea19d6a0514e7938d74c2f164b2.bindTooltip(
+                `<div>
+                     Reims Bezannes (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1073bc6ae56f350e862b1d4915adb6b = L.circleMarker(
+                [48.1113387, -1.6800198],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_1cc4c2225d8aadbdd10a0aab7417fbf7 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_675d28396848fdc20670e95a0447d651 = $(`<div id="html_675d28396848fdc20670e95a0447d651" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Rennes</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Rennes, Ille-et-Vilaine, Bretagne, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Rennes</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Anesthesiology</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Loic Mounier</li></ul>     </div>     </div>`)[0];
+                popup_1cc4c2225d8aadbdd10a0aab7417fbf7.setContent(html_675d28396848fdc20670e95a0447d651);
+            
+        
+
+        circle_marker_b1073bc6ae56f350e862b1d4915adb6b.bindPopup(popup_1cc4c2225d8aadbdd10a0aab7417fbf7)
+        ;
+
+        
+    
+    
+            circle_marker_b1073bc6ae56f350e862b1d4915adb6b.bindTooltip(
+                `<div>
+                     Rennes (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ccf9fbedc15cde50d1607d3f19ecf725 = L.circleMarker(
+                [50.6915893, 3.1741734],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_a229f2f78675d563a7454d64cf297b1f = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_48e4aff26074cc67ac4657a3b8b7084b = $(`<div id="html_48e4aff26074cc67ac4657a3b8b7084b" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Roubaix</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Roubaix, Lille, Nord, Hauts-de-France, France métropolitaine, 59100, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Roubaix</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> General practice</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Salima Kaouel</li></ul>     </div>     </div>`)[0];
+                popup_a229f2f78675d563a7454d64cf297b1f.setContent(html_48e4aff26074cc67ac4657a3b8b7084b);
+            
+        
+
+        circle_marker_ccf9fbedc15cde50d1607d3f19ecf725.bindPopup(popup_a229f2f78675d563a7454d64cf297b1f)
+        ;
+
+        
+    
+    
+            circle_marker_ccf9fbedc15cde50d1607d3f19ecf725.bindTooltip(
+                `<div>
+                     Roubaix (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1f93efc2114c5903e74e7241a5c18f5 = L.circleMarker(
+                [49.4404591, 1.0939658],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_4f8b4e4fd5515f666d7eff7b4eea26b6 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_b6f45fb3896d0f7943ba817da0334d5e = $(`<div id="html_b6f45fb3896d0f7943ba817da0334d5e" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Rouen</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Rouen, Seine-Maritime, Normandie, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Rouen</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Orthopédiste</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Jean-noël Martin</li></ul>     </div>     </div>`)[0];
+                popup_4f8b4e4fd5515f666d7eff7b4eea26b6.setContent(html_b6f45fb3896d0f7943ba817da0334d5e);
+            
+        
+
+        circle_marker_f1f93efc2114c5903e74e7241a5c18f5.bindPopup(popup_4f8b4e4fd5515f666d7eff7b4eea26b6)
+        ;
+
+        
+    
+    
+            circle_marker_f1f93efc2114c5903e74e7241a5c18f5.bindTooltip(
+                `<div>
+                     Rouen (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f0aa0c25e0234835963f4f1e362ab92d = L.circleMarker(
+                [48.9383732, 2.3627508],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_de8459836690c407a961c55ccef019cf = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_d44b3e1980cccd24636255e6a46886dd = $(`<div id="html_d44b3e1980cccd24636255e6a46886dd" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Saint-Denis</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Saint-Denis, Seine-Saint-Denis, Île-de-France, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Saint-Denis</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Généraliste/Urgentiste</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Nabil Antoine Saab</li></ul>     </div>     </div>`)[0];
+                popup_de8459836690c407a961c55ccef019cf.setContent(html_d44b3e1980cccd24636255e6a46886dd);
+            
+        
+
+        circle_marker_f0aa0c25e0234835963f4f1e362ab92d.bindPopup(popup_de8459836690c407a961c55ccef019cf)
+        ;
+
+        
+    
+    
+            circle_marker_f0aa0c25e0234835963f4f1e362ab92d.bindTooltip(
+                `<div>
+                     Saint-Denis (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d57c3225de98ff90d6360cc3366e6db = L.circleMarker(
+                [47.2733517, -2.2138905],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_e98a64c7d84c885c3fef7b6afabb72fa = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_5c05eadb7a9ddb91ee590a4fbee0e53e = $(`<div id="html_5c05eadb7a9ddb91ee590a4fbee0e53e" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Saint-Nazaire</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Saint-Nazaire, Loire-Atlantique, Pays de la Loire, France métropolitaine, 44600, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Saint-Nazaire</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Pulmonology</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Marine Tessier-Andrieu</li></ul>     </div>     </div>`)[0];
+                popup_e98a64c7d84c885c3fef7b6afabb72fa.setContent(html_5c05eadb7a9ddb91ee590a4fbee0e53e);
+            
+        
+
+        circle_marker_1d57c3225de98ff90d6360cc3366e6db.bindPopup(popup_e98a64c7d84c885c3fef7b6afabb72fa)
+        ;
+
+        
+    
+    
+            circle_marker_1d57c3225de98ff90d6360cc3366e6db.bindTooltip(
+                `<div>
+                     Saint-Nazaire (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f5320a697f5b07d9a0c452205faa3d2 = L.circleMarker(
+                [48.8809128, 2.4287096],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_bcc9cc5f56cd138e292fb8b650486724 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_65b560097c1d1123c757b4160da1a681 = $(`<div id="html_65b560097c1d1123c757b4160da1a681" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Seine-Saint-Denis (93)</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Cyberrance, 93, Rue de la Liberté, Cité des Sentes, Romainville, Bobigny, Seine-Saint-Denis, Île-de-France, France métropolitaine, 93230, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Seine-Saint-Denis (93)</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Psychiatry</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Bricou (likely Sophie Bricou-Blanot)</li></ul>     </div>     </div>`)[0];
+                popup_bcc9cc5f56cd138e292fb8b650486724.setContent(html_65b560097c1d1123c757b4160da1a681);
+            
+        
+
+        circle_marker_5f5320a697f5b07d9a0c452205faa3d2.bindPopup(popup_bcc9cc5f56cd138e292fb8b650486724)
+        ;
+
+        
+    
+    
+            circle_marker_5f5320a697f5b07d9a0c452205faa3d2.bindTooltip(
+                `<div>
+                     Seine-Saint-Denis (93) (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_210f5d69f460e931a9588c8e021b8e9c = L.circleMarker(
+                [48.584614, 7.7507127],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_5f7f87fb8f6689eaef9548ba81b8d4f4 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_bb7f6db062d597648bde478df632f862 = $(`<div id="html_bb7f6db062d597648bde478df632f862" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Strasbourg</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Strasbourg, Bas-Rhin, Collectivité européenne d'Alsace, Grand Est, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Strasbourg</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Gastro</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Olivier Gronier</li></ul>     </div>     </div>`)[0];
+                popup_5f7f87fb8f6689eaef9548ba81b8d4f4.setContent(html_bb7f6db062d597648bde478df632f862);
+            
+        
+
+        circle_marker_210f5d69f460e931a9588c8e021b8e9c.bindPopup(popup_5f7f87fb8f6689eaef9548ba81b8d4f4)
+        ;
+
+        
+    
+    
+            circle_marker_210f5d69f460e931a9588c8e021b8e9c.bindTooltip(
+                `<div>
+                     Strasbourg (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_657dbc96d19a5d9880a639768fb91e3d = L.circleMarker(
+                [46.3731303, 6.4779448],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_278d0cf5dfc9f26dd743325fa5dd98ae = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_06bfd4fab26c195ccd6cc542c9dfc4f4 = $(`<div id="html_06bfd4fab26c195ccd6cc542c9dfc4f4" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Thonon-les-Bains</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 3</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Thonon-les-Bains, Haute-Savoie, Auvergne-Rhône-Alpes, France métropolitaine, 74200, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Thonon-les-Bains</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Dermato, Radiologue</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Marie Giraud</li><li>Marion Gabillot</li><li>Stéphane Carré</li></ul>     </div>     </div>`)[0];
+                popup_278d0cf5dfc9f26dd743325fa5dd98ae.setContent(html_06bfd4fab26c195ccd6cc542c9dfc4f4);
+            
+        
+
+        circle_marker_657dbc96d19a5d9880a639768fb91e3d.bindPopup(popup_278d0cf5dfc9f26dd743325fa5dd98ae)
+        ;
+
+        
+    
+    
+            circle_marker_657dbc96d19a5d9880a639768fb91e3d.bindTooltip(
+                `<div>
+                     Thonon-les-Bains (3)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3813bbaa05b215da9f1b66b66e371d87 = L.circleMarker(
+                [43.6044638, 1.4442433],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_6629b14ec7918dbddbb09b6d4067a604 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_05e441aed19a69c33816bbfbb4b1f546 = $(`<div id="html_05e441aed19a69c33816bbfbb4b1f546" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Toulouse</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 2</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Toulouse, Haute-Garonne, Occitanie, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Toulouse</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Gynéco, Occupational medicine</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Charlotte Pelletier Piotrowski</li><li>Delphine Bouvet</li></ul>     </div>     </div>`)[0];
+                popup_6629b14ec7918dbddbb09b6d4067a604.setContent(html_05e441aed19a69c33816bbfbb4b1f546);
+            
+        
+
+        circle_marker_3813bbaa05b215da9f1b66b66e371d87.bindPopup(popup_6629b14ec7918dbddbb09b6d4067a604)
+        ;
+
+        
+    
+    
+            circle_marker_3813bbaa05b215da9f1b66b66e371d87.bindTooltip(
+                `<div>
+                     Toulouse (2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_36f8a8c53773e49226fe64dd55062eb2 = L.circleMarker(
+                [47.3900474, 0.6889268],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_c4503cc109620c818c3468763f94d9cb = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_72ca760523893e8ab2e133b52809fc40 = $(`<div id="html_72ca760523893e8ab2e133b52809fc40" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Tours</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Tours, Indre-et-Loire, Centre-Val de Loire, France métropolitaine, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Tours</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Orthopédiste</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Julien Herard</li></ul>     </div>     </div>`)[0];
+                popup_c4503cc109620c818c3468763f94d9cb.setContent(html_72ca760523893e8ab2e133b52809fc40);
+            
+        
+
+        circle_marker_36f8a8c53773e49226fe64dd55062eb2.bindPopup(popup_c4503cc109620c818c3468763f94d9cb)
+        ;
+
+        
+    
+    
+            circle_marker_36f8a8c53773e49226fe64dd55062eb2.bindTooltip(
+                `<div>
+                     Tours (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dbef53e1aa144bc751e102bdb27b22a0 = L.circleMarker(
+                [48.841958, 2.4066039],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_4ae7d4f1a6f1347d0513d7c299fe4f52 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_fdbb8510d46a234ddfd6dd772a7fa6d6 = $(`<div id="html_fdbb8510d46a234ddfd6dd772a7fa6d6" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Trousseau, Paris</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Hôpital Armand-Trousseau, Rue de Rambervillers, Quartier du Bel-Air, Paris 12e Arrondissement, Paris, Île-de-France, France métropolitaine, 75012, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Trousseau, Paris</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Pneumopediatrics</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Nadia Nathan (Moulin)</li></ul>     </div>     </div>`)[0];
+                popup_4ae7d4f1a6f1347d0513d7c299fe4f52.setContent(html_fdbb8510d46a234ddfd6dd772a7fa6d6);
+            
+        
+
+        circle_marker_dbef53e1aa144bc751e102bdb27b22a0.bindPopup(popup_4ae7d4f1a6f1347d0513d7c299fe4f52)
+        ;
+
+        
+    
+    
+            circle_marker_dbef53e1aa144bc751e102bdb27b22a0.bindTooltip(
+                `<div>
+                     Trousseau, Paris (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6b62860e98dbdd516896106a61e41cd = L.circleMarker(
+                [47.6586772, -2.7599079],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_ef33fc2510b99ed17b766554848f5c75 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_8988c8e9bb37cc5ad4c6c8b82b80b71a = $(`<div id="html_8988c8e9bb37cc5ad4c6c8b82b80b71a" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Vannes</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 2</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Vannes, Morbihan, Bretagne, France métropolitaine, 56000, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Vannes</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Radiologue, Urgentiste</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Emily Lesigne</li><li>Vincent Tran Dinh</li></ul>     </div>     </div>`)[0];
+                popup_ef33fc2510b99ed17b766554848f5c75.setContent(html_8988c8e9bb37cc5ad4c6c8b82b80b71a);
+            
+        
+
+        circle_marker_a6b62860e98dbdd516896106a61e41cd.bindPopup(popup_ef33fc2510b99ed17b766554848f5c75)
+        ;
+
+        
+    
+    
+            circle_marker_a6b62860e98dbdd516896106a61e41cd.bindTooltip(
+                `<div>
+                     Vannes (2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_527779e2d50db23248e4dcfdee147112 = L.circleMarker(
+                [48.9792052, 1.9756367],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_9dd744975cbb17deecaefecbc31bd11e = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_32ec17a02819c89bec71c613dab8916b = $(`<div id="html_32ec17a02819c89bec71c613dab8916b" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Verneuil-sur-Seine (Yvelines)</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Verneuil-sur-Seine, Saint-Germain-en-Laye, Yvelines, Île-de-France, France métropolitaine, 78480, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Verneuil-sur-Seine (Yvelines)</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Gyn-obst</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Nabil Louafi</li></ul>     </div>     </div>`)[0];
+                popup_9dd744975cbb17deecaefecbc31bd11e.setContent(html_32ec17a02819c89bec71c613dab8916b);
+            
+        
+
+        circle_marker_527779e2d50db23248e4dcfdee147112.bindPopup(popup_9dd744975cbb17deecaefecbc31bd11e)
+        ;
+
+        
+    
+    
+            circle_marker_527779e2d50db23248e4dcfdee147112.bindTooltip(
+                `<div>
+                     Verneuil-sur-Seine (Yvelines) (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82050435049a5903924e14fc298f3f0f = L.circleMarker(
+                [48.8035403, 2.1266886],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_f1420a0f25e482bd3d3a9502dc5497bf = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_ce5f849439229da84d3c443bfc354709 = $(`<div id="html_ce5f849439229da84d3c443bfc354709" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Versailles</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 2</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Versailles, Yvelines, Île-de-France, France métropolitaine, 78000, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Versailles</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Urgentiste/PASS, Virology</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Marie-Anne Rameix-Welti</li><li>Ségolène Deau</li></ul>     </div>     </div>`)[0];
+                popup_f1420a0f25e482bd3d3a9502dc5497bf.setContent(html_ce5f849439229da84d3c443bfc354709);
+            
+        
+
+        circle_marker_82050435049a5903924e14fc298f3f0f.bindPopup(popup_f1420a0f25e482bd3d3a9502dc5497bf)
+        ;
+
+        
+    
+    
+            circle_marker_82050435049a5903924e14fc298f3f0f.bindTooltip(
+                `<div>
+                     Versailles (2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_948949471a445e06b90a2c2e65a6af84 = L.circleMarker(
+                [45.7733573, 4.8868454],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c9f3860f6e40b03158560e3c6f14a4c8);
+        
+    
+        var popup_5493063f6873e690d3d8e9b5745efa6c = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_c9b2b4bb7f3e4bd6284692256745e2d7 = $(`<div id="html_c9b2b4bb7f3e4bd6284692256745e2d7" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Villeurbanne, France</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Villeurbanne, Lyon, Métropole de Lyon, Rhône, Auvergne-Rhône-Alpes, France métropolitaine, 69100, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Lyon-Villeurbanne</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Pulmonology</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Elsie Staub</li></ul>     </div>     </div>`)[0];
+                popup_5493063f6873e690d3d8e9b5745efa6c.setContent(html_c9b2b4bb7f3e4bd6284692256745e2d7);
+            
+        
+
+        circle_marker_948949471a445e06b90a2c2e65a6af84.bindPopup(popup_5493063f6873e690d3d8e9b5745efa6c)
+        ;
+
+        
+    
+    
+            circle_marker_948949471a445e06b90a2c2e65a6af84.bindTooltip(
+                `<div>
+                     Villeurbanne, France (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_c9f3860f6e40b03158560e3c6f14a4c8.addTo(map_068438a8d4d7332d22d2f61375a0ec97);
+        
+    
+            var feature_group_c41e2e851c0d9e3a5073c6eba66af19e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_bb0510a0f2a00de528a465b482448c79 = L.circleMarker(
+                [39.9057136, 116.3912972],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fb6a4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c41e2e851c0d9e3a5073c6eba66af19e);
+        
+    
+        var popup_06c015a0d23c804f04b70a2e94e89e86 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_50b3243393121f95eecef378b813635c = $(`<div id="html_50b3243393121f95eecef378b813635c" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Beijing, China</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> Outside France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> 北京市, 中国</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Beijing</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Emergency medicine</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Sonia Jutard (Bourreau)</li></ul>     </div>     </div>`)[0];
+                popup_06c015a0d23c804f04b70a2e94e89e86.setContent(html_50b3243393121f95eecef378b813635c);
+            
+        
+
+        circle_marker_bb0510a0f2a00de528a465b482448c79.bindPopup(popup_06c015a0d23c804f04b70a2e94e89e86)
+        ;
+
+        
+    
+    
+            circle_marker_bb0510a0f2a00de528a465b482448c79.bindTooltip(
+                `<div>
+                     Beijing, China (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69e72552cf14ad1b70e726440a985136 = L.circleMarker(
+                [-37.8142454, 144.9631732],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fb6a4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c41e2e851c0d9e3a5073c6eba66af19e);
+        
+    
+        var popup_c092da5686da735f8c6af10ed2989c34 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_1c36f0c39140d9d547dac583b7917aa7 = $(`<div id="html_1c36f0c39140d9d547dac583b7917aa7" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Melbourne</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> Outside France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Melbourne, City of Melbourne, Victoria, Australia</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Melbourne</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Psychiatry</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Josselin Houenou</li></ul>     </div>     </div>`)[0];
+                popup_c092da5686da735f8c6af10ed2989c34.setContent(html_1c36f0c39140d9d547dac583b7917aa7);
+            
+        
+
+        circle_marker_69e72552cf14ad1b70e726440a985136.bindPopup(popup_c092da5686da735f8c6af10ed2989c34)
+        ;
+
+        
+    
+    
+            circle_marker_69e72552cf14ad1b70e726440a985136.bindTooltip(
+                `<div>
+                     Melbourne (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_423c5842482a070d542cd7dbd6ed970f = L.circleMarker(
+                [61.0666922, -107.991707],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fb6a4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c41e2e851c0d9e3a5073c6eba66af19e);
+        
+    
+        var popup_17e5a063d569811709bb3dcbd7fcc998 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_7d7b02d1c8871790c5fea570e4bd4fae = $(`<div id="html_7d7b02d1c8871790c5fea570e4bd4fae" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Canada</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> Outside France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Canada</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Canada</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Psychiatry</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Flaminia Kaminski</li></ul>     </div>     </div>`)[0];
+                popup_17e5a063d569811709bb3dcbd7fcc998.setContent(html_7d7b02d1c8871790c5fea570e4bd4fae);
+            
+        
+
+        circle_marker_423c5842482a070d542cd7dbd6ed970f.bindPopup(popup_17e5a063d569811709bb3dcbd7fcc998)
+        ;
+
+        
+    
+    
+            circle_marker_423c5842482a070d542cd7dbd6ed970f.bindTooltip(
+                `<div>
+                     Canada (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aaab7d73975ff3d4e7cbb0d0fab7641b = L.circleMarker(
+                [-22.2745264, 166.442419],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fb6a4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c41e2e851c0d9e3a5073c6eba66af19e);
+        
+    
+        var popup_bc843dd07fc24464dd8deb2a9c01e7fc = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_1a5db62ecaebf4c7e2101b4e60a518d6 = $(`<div id="html_1a5db62ecaebf4c7e2101b4e60a518d6" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Noumea, New Caledonia</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> Outside France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Nouméa, Province Sud, Nouvelle-Calédonie, 98800, France</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Noumea</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Pneumologue</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Fred Naudin (likely)</li></ul>     </div>     </div>`)[0];
+                popup_bc843dd07fc24464dd8deb2a9c01e7fc.setContent(html_1a5db62ecaebf4c7e2101b4e60a518d6);
+            
+        
+
+        circle_marker_aaab7d73975ff3d4e7cbb0d0fab7641b.bindPopup(popup_bc843dd07fc24464dd8deb2a9c01e7fc)
+        ;
+
+        
+    
+    
+            circle_marker_aaab7d73975ff3d4e7cbb0d0fab7641b.bindTooltip(
+                `<div>
+                     Noumea, New Caledonia (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd518b38234acf97d34ea789e33c3973 = L.circleMarker(
+                [-20.2534998, 57.589573],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fb6a4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c41e2e851c0d9e3a5073c6eba66af19e);
+        
+    
+        var popup_b274d1999156b2e1766501653156acd0 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_15b6e8eb009b1dc5fe9a19f4f63465fc = $(`<div id="html_15b6e8eb009b1dc5fe9a19f4f63465fc" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Ile Maurice</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> Outside France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Ile Maurice, Moka, Mauritius / Maurice</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Île Maurice</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Gériatre</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Pascale Dinan</li></ul>     </div>     </div>`)[0];
+                popup_b274d1999156b2e1766501653156acd0.setContent(html_15b6e8eb009b1dc5fe9a19f4f63465fc);
+            
+        
+
+        circle_marker_dd518b38234acf97d34ea789e33c3973.bindPopup(popup_b274d1999156b2e1766501653156acd0)
+        ;
+
+        
+    
+    
+            circle_marker_dd518b38234acf97d34ea789e33c3973.bindTooltip(
+                `<div>
+                     Ile Maurice (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c4232f9b6d559990d193523224275119 = L.circleMarker(
+                [46.2017559, 6.1466014],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fb6a4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c41e2e851c0d9e3a5073c6eba66af19e);
+        
+    
+        var popup_1bf37f301db55e0d357b50f4c80f8fa1 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_a13b2cb59d1a580ba8f4624fd029399c = $(`<div id="html_a13b2cb59d1a580ba8f4624fd029399c" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Geneva, Switzerland</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> Outside France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Genève, Schweiz/Suisse/Svizzera/Svizra</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Genève (Suisse)</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Réa</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Fred Mollard</li></ul>     </div>     </div>`)[0];
+                popup_1bf37f301db55e0d357b50f4c80f8fa1.setContent(html_a13b2cb59d1a580ba8f4624fd029399c);
+            
+        
+
+        circle_marker_c4232f9b6d559990d193523224275119.bindPopup(popup_1bf37f301db55e0d357b50f4c80f8fa1)
+        ;
+
+        
+    
+    
+            circle_marker_c4232f9b6d559990d193523224275119.bindTooltip(
+                `<div>
+                     Geneva, Switzerland (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6fe11e193d6760d36b0b254eeae9497 = L.circleMarker(
+                [47.425618, 9.3762397],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fb6a4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c41e2e851c0d9e3a5073c6eba66af19e);
+        
+    
+        var popup_281f272bfc58d0f31b6c07454d9beedd = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_3d5cb6256bfcd34c5cb3b537bf5c545d = $(`<div id="html_3d5cb6256bfcd34c5cb3b537bf5c545d" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>St. Gallen, Switzerland</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> Outside France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> St. Gallen, Wahlkreis St. Gallen, St. Gallen, Schweiz/Suisse/Svizzera/Svizra</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Saint-Gall (Suisse)</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Interniste</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Laurence Josselin-Mahr</li></ul>     </div>     </div>`)[0];
+                popup_281f272bfc58d0f31b6c07454d9beedd.setContent(html_3d5cb6256bfcd34c5cb3b537bf5c545d);
+            
+        
+
+        circle_marker_b6fe11e193d6760d36b0b254eeae9497.bindPopup(popup_281f272bfc58d0f31b6c07454d9beedd)
+        ;
+
+        
+    
+    
+            circle_marker_b6fe11e193d6760d36b0b254eeae9497.bindTooltip(
+                `<div>
+                     St. Gallen, Switzerland (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4cc4c52ce1cc32cc9a4ac33803e73bd5 = L.circleMarker(
+                [37.7879363, -122.4075201],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fb6a4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c41e2e851c0d9e3a5073c6eba66af19e);
+        
+    
+        var popup_8a59048261572892423f9ba165d04385 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_e297a6c0bc3e97fae9df337abe1f351e = $(`<div id="html_e297a6c0bc3e97fae9df337abe1f351e" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>San Francisco, CA</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> Outside France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> San Francisco, California, United States</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> San Francisco, CA</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Biotech</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Cyril Konto</li></ul>     </div>     </div>`)[0];
+                popup_8a59048261572892423f9ba165d04385.setContent(html_e297a6c0bc3e97fae9df337abe1f351e);
+            
+        
+
+        circle_marker_4cc4c52ce1cc32cc9a4ac33803e73bd5.bindPopup(popup_8a59048261572892423f9ba165d04385)
+        ;
+
+        
+    
+    
+            circle_marker_4cc4c52ce1cc32cc9a4ac33803e73bd5.bindTooltip(
+                `<div>
+                     San Francisco, CA (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c84b41dac9fb102b3f37926c496b1e0 = L.circleMarker(
+                [37.7879363, -122.4075201],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fb6a4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c41e2e851c0d9e3a5073c6eba66af19e);
+        
+    
+        var popup_33b8d7b25f10c2309b3bfcb1fd877a0d = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_364bf992db09c4a60679ca0d7c64e716 = $(`<div id="html_364bf992db09c4a60679ca0d7c64e716" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>San Francisco, CA, USA</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> Outside France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> San Francisco, California, United States</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> San Francisco, CA / France</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Entertainment / psychology PhD trainee</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Alexandra Rousseau (Frohlich)</li></ul>     </div>     </div>`)[0];
+                popup_33b8d7b25f10c2309b3bfcb1fd877a0d.setContent(html_364bf992db09c4a60679ca0d7c64e716);
+            
+        
+
+        circle_marker_7c84b41dac9fb102b3f37926c496b1e0.bindPopup(popup_33b8d7b25f10c2309b3bfcb1fd877a0d)
+        ;
+
+        
+    
+    
+            circle_marker_7c84b41dac9fb102b3f37926c496b1e0.bindTooltip(
+                `<div>
+                     San Francisco, CA, USA (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d171739160c5348cb0f73147fd15be67 = L.circleMarker(
+                [40.6403167, 22.9352716],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fb6a4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c41e2e851c0d9e3a5073c6eba66af19e);
+        
+    
+        var popup_9af4f76451f1232a263424a77d8d1fc7 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_5951f3126e5fbb0d56b4e74cfdd5400c = $(`<div id="html_5951f3126e5fbb0d56b4e74cfdd5400c" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; min-width: 300px; max-width: 380px;'>       <div style='font-size: 15px; font-weight: 700; margin-bottom: 6px;'>Thessaloniki, Greece</div>       <div style='margin-bottom: 4px;'><b>People at this point:</b> 1</div>       <div style='margin-bottom: 4px;'><b>Region:</b> Outside France</div>       <div style='margin-bottom: 4px;'><b>Geocoded address:</b> Θεσσαλονίκη, Δημοτική Ενότητα Θεσαλονίκης, Δήμος Θεσσαλονίκης, Μητροπολιτική Ενότητα Θεσσαλονίκης, Περιφέρεια Κεντρικής Μακεδονίας, Αποκεντρωμένη Διοίκηση Μακεδονίας - Θράκης, 540 12, Ελλάς</div>       <div style='margin-bottom: 4px;'><b>Source location labels:</b> Thessaloniki, Greece</div>       <div style='margin-bottom: 8px;'><b>Specialties:</b> Urological surgeon</div>       <div style='font-weight: 700; margin-bottom: 4px;'>People</div>       <ul style='padding-left: 18px; margin: 0;'><li>Andreas Andreou</li></ul>     </div>     </div>`)[0];
+                popup_9af4f76451f1232a263424a77d8d1fc7.setContent(html_5951f3126e5fbb0d56b4e74cfdd5400c);
+            
+        
+
+        circle_marker_d171739160c5348cb0f73147fd15be67.bindPopup(popup_9af4f76451f1232a263424a77d8d1fc7)
+        ;
+
+        
+    
+    
+            circle_marker_d171739160c5348cb0f73147fd15be67.bindTooltip(
+                `<div>
+                     Thessaloniki, Greece (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_c41e2e851c0d9e3a5073c6eba66af19e.addTo(map_068438a8d4d7332d22d2f61375a0ec97);
+        
+    
+            var layer_control_d530593ba0986475b9b87d810a9c1d08_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_7195609cf039d421aea7ab61511ae686,
+                },
+                overlays :  {
+                    "France" : feature_group_c9f3860f6e40b03158560e3c6f14a4c8,
+                    "Outside France" : feature_group_c41e2e851c0d9e3a5073c6eba66af19e,
+                },
+            };
+            let layer_control_d530593ba0986475b9b87d810a9c1d08 = L.control.layers(
+                layer_control_d530593ba0986475b9b87d810a9c1d08_layers.base_layers,
+                layer_control_d530593ba0986475b9b87d810a9c1d08_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_068438a8d4d7332d22d2f61375a0ec97);
+
+        
+    
+            map_068438a8d4d7332d22d2f61375a0ec97.fitBounds(
+                [[-37.8142454, -122.4075201], [61.0666922, 166.442419]],
+                {"padding": [30, 30]}
+            );
+        
+</script>
+</html>
